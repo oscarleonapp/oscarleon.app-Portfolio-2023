@@ -8,9 +8,9 @@
 
     /* HSL Color Mode */
     --skin-color: hsl(342, 92%, 46%);
-    --title-color: hsl(var(--hue-color), 8%, 95%);
-    --text-color: hsl(var(--hue-color), 8%, 85%);
-    --body-color: hsl(var(--hue-color), 19%, 5%);
+    --title-color: #fff;
+    --text-color: #a4b1cd;
+    --body-color: #141d2b;
     --box-color: hsl(var(--hue-color), 14%, 10%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
@@ -75,6 +75,39 @@ button,
 input{
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
+}
+
+body{
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3{
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+button{
+    cursor: pointer;
+}
+
+button,
+input{
+    border: none;
+    outline: none;
 }
 
 /*=============== LAYOUT ===============*/
