@@ -4,14 +4,14 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
     /*===== Colors =====*/
-    --hue-color:242;
 
     /* HSL Color Mode */
-    --skin-color: hsl(342, 92%, 46%);
+    --principal-color: #9fef00;
+    --skin-color: ##9fef00;
     --title-color: #fff;
     --text-color: #a4b1cd;
     --body-color: #141d2b;
-    --box-color: hsl(var(--hue-color), 14%, 10%);
+    --box-color: #0a1424;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
 
@@ -117,10 +117,63 @@ input{
 
 
 /*=============== SIDEBAR ===============*/
+.sidebar{
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+    background-color: var(--body-color);
+    border-right: 1px solid var(--box-color);
+}
 
+.nav_logo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.8rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--principal-color);
+    text-align: center;
+    margin: auto;
+}
 
+.nav_logo-text{
+    font-size: 1.125rem;
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    line-height: 40px;
+}
+
+.nav_menu{
+    position: fixed;
+    transform: rotate(-90deg) translateX(-100%);
+    transform-origin: left top;
+    width: 100vh;
+}
+
+.menu{
+    display: flex;
+}
+
+.nav_list{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: -2px auto 0 auto;
+}
+
+.nav_link{
+    height: 100%;
+    line-height: 100px;
+    padding: 0 1rem;
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    position: relative;
+}
 /* Active Link */
-
+.nav_link.active-link, .nav_link:hover{
+    color: var(--principal-color);
+}
 
 /*=============== MAIN ===============*/
 
