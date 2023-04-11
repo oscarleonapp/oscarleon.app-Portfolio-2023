@@ -4,14 +4,14 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
     /*===== Colors =====*/
-    --hue-color:242;
 
     /* HSL Color Mode */
-    --skin-color: hsl(342, 92%, 46%);
-    --title-color: hsl(var(--hue-color), 8%, 95%);
-    --text-color: hsl(var(--hue-color), 8%, 85%);
-    --body-color: hsl(var(--hue-color), 19%, 5%);
-    --box-color: hsl(var(--hue-color), 14%, 10%);
+    --principal-color: #9fef00;
+    --skin-color: ##9fef00;
+    --title-color: #fff;
+    --text-color: #a4b1cd;
+    --body-color: #141d2b;
+    --box-color: #0a1424;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
 
@@ -60,7 +60,55 @@
 }
 
 /*=============== BASE ===============*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html{
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body{
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3{
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+button{
+    cursor: pointer;
+}
+
+button,
+input{
+    border: none;
+    outline: none;
+}
 
 /*=============== LAYOUT ===============*/
 
@@ -69,10 +117,63 @@
 
 
 /*=============== SIDEBAR ===============*/
+.sidebar{
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+    background-color: var(--body-color);
+    border-right: 1px solid var(--box-color);
+}
 
+.nav_logo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.8rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--principal-color);
+    text-align: center;
+    margin: auto;
+}
 
+.nav_logo-text{
+    font-size: 1.125rem;
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    line-height: 40px;
+}
+
+.nav_menu{
+    position: fixed;
+    transform: rotate(-90deg) translateX(-100%);
+    transform-origin: left top;
+    width: 100vh;
+}
+
+.menu{
+    display: flex;
+}
+
+.nav_list{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: -2px auto 0 auto;
+}
+
+.nav_link{
+    height: 100%;
+    line-height: 100px;
+    padding: 0 1rem;
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    position: relative;
+}
 /* Active Link */
-
+.nav_link.active-link, .nav_link:hover{
+    color: var(--principal-color);
+}
 
 /*=============== MAIN ===============*/
 
