@@ -169,10 +169,21 @@ input{
     color: var(--title-color);
     font-weight: var(--font-medium);
     position: relative;
+    transition: .4s;
 }
 /* Active Link */
 .nav_link.active-link, .nav_link:hover{
     color: var(--principal-color);
+}
+
+.nav_link.active-link::after, .nav_link:hover::after{
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: var(--principal-color);
+    border-radius: 50%;
+    bottom: 1.8rem;
 }
 
 /*=============== MAIN ===============*/
