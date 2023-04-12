@@ -163,6 +163,7 @@ input{
 }
 
 .nav_link{
+    float: right;
     height: 100%;
     line-height: 100px;
     padding: 0 1rem;
@@ -171,6 +172,18 @@ input{
     position: relative;
     transition: .4s;
 }
+
+.btn_share{
+    position: absolute;
+    bottom: 1.8rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+
+
 /* Active Link */
 .nav_link.active-link, .nav_link:hover{
     color: var(--principal-color);
@@ -184,6 +197,9 @@ input{
     background-color: var(--principal-color);
     border-radius: 50%;
     bottom: 1.8rem;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 /*=============== MAIN ===============*/
