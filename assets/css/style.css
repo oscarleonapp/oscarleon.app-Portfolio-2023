@@ -111,7 +111,15 @@ input{
 }
 
 /*=============== LAYOUT ===============*/
+.container{
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.grid{
+    display: grid;
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 
@@ -208,7 +216,14 @@ input{
 }
 
 /*===== Home Section =====*/
+.home{
+    background: url('../source/img/home-bg.jpg');
+    background-size: cover;
+}
 
+.home_img{
+    display: none;
+}
 
 /*===== Buttons =====*/
 
