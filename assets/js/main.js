@@ -23,7 +23,14 @@ let mixerPortolio = mixitup('.work_container', {
 });
 
 /*===== Link Active Work =====*/
+const linkWork = document.querySelectorAll('.work_item')
 
+function activeWork(){
+    linkWork.forEach(l=> l.classList.remove('active_work'))
+    this.classList.add('active_work')
+}
+
+linkWork.forEach(l=> l.addEventListener("click", activeWork))
 
 /*===== Work Popup =====*/
 
