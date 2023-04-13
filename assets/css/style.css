@@ -406,6 +406,16 @@ input{
 
 .about_icon{
     font-size: 1.5rem;
+    color: var(--principal-color);
+    margin-bottom: var(--mb-0-75);
+}
+
+.about_title{
+    font-size: var(--small-font-size);
+}
+
+.about_subtitle{
+    font-size: var(--smaller-font-size);
 }
 /*===== Qualification Section =====*/
 
