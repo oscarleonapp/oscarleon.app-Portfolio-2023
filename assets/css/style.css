@@ -376,9 +376,37 @@ input{
 
 .about_img{
     width: 480px;
-    border-radius: 1.5rem;
+    border-radius: 0.75rem;
+    justify-self: center;
 }
 
+.about_heading{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.about_description{
+    text-align: justify;
+    padding-right: 6rem;
+    margin-bottom: var(--mb-2);
+}
+
+.about_info{
+    grid-template-columns: repeat(3, 140px);
+    column-gap: .5rem;
+    margin-bottom: var(--mb-3);
+}
+
+.about_box{
+    text-align: center;
+    border-radius: .25rem;
+    padding: 1rem 1.25rem;
+    background-color: var(--box-color);
+}
+
+.about_icon{
+    font-size: 1.5rem;
+}
 /*===== Qualification Section =====*/
 
 
