@@ -368,7 +368,16 @@ input{
 }
 
 /*===== About Section =====*/
+.about_container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    align-items: center;
+}
 
+.about_img{
+    width: 480px;
+    border-radius: 1.5rem;
+}
 
 /*===== Qualification Section =====*/
 
