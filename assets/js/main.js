@@ -13,7 +13,14 @@
 
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
-
+let mixerPortolio = mixitup('.work_container', {
+    selectors: {
+        target: '.work_card'
+    },
+    animation: {
+        duration: 300
+    }
+});
 
 /*===== Link Active Work =====*/
 
