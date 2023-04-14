@@ -34,6 +34,13 @@ linkWork.forEach(l=> l.addEventListener("click", activeWork))
 
 /*===== Work Popup =====*/
 document.addEventListener("click", (e) => {
+    if(e.target.classList.contains("work_img")){
+        togglePortfolioPopup()
+        portfolioItemDetails(e.target.parentElement);
+    }
+})
+
+document.addEventListener("click", (e) => {
     if(e.target.classList.contains("work_button")){
         togglePortfolioPopup()
         portfolioItemDetails(e.target.parentElement);

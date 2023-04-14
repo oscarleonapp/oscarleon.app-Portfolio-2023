@@ -456,6 +456,7 @@ input{
 .work_img{
     border-radius: .5rem;
     margin-bottom: var(--mb-1);
+    cursor: pointer;
 }
 
 .work_title{
