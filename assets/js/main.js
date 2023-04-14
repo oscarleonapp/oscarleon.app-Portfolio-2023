@@ -33,7 +33,17 @@ function activeWork(){
 linkWork.forEach(l=> l.addEventListener("click", activeWork))
 
 /*===== Work Popup =====*/
+document.addEventListener("click", (e) => {
+    if(e.target.classList.contains("work_button")){
+        togglePortfolioPopup()
+    }
+})
 
+function togglePortfolioPopup() {
+    document.querySelector(".portfolio_popup").classList.toggle("open");
+}
+
+document.querySelector(".close-modal").addEventListener("click", togglePortfolioPopup)
 
 /*=============== SERVICES MODAL ===============*/
 
