@@ -147,6 +147,7 @@ input{
     height: 100vh;
     background-color: var(--body-color);
     border-right: 1px solid var(--box-color);
+    z-index: 1;
 }
 
 .nav_logo{
