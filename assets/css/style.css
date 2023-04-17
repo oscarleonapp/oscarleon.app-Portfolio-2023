@@ -568,7 +568,49 @@ input{
 }
 
 /*===== Services Section =====*/
+.services_container{
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+    column-gap: 1.8rem;
+}
 
+.services_content{
+    position: relative;
+    background-color: var(--box-color);
+    padding: 6rem 0 2rem 2.5rem;
+    border-radius: .25rem;
+}
+
+.services_icon{
+    display: block;
+    font-size: 1.8rem;
+    color: var(--principal-color);
+    margin-bottom: var(--mb-1);
+}
+
+.services_title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+    font-weight: var(--font-medium);
+}
+
+.services_button {
+    color: var(--principal-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    cursor: pointer;
+}
+
+.services_button-icon{
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.services_button:hover .services_button-icon{
+    transform: translateX(.25rem);
+}
 
 /* Active Modal*/
 
