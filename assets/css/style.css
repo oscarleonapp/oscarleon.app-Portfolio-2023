@@ -742,6 +742,7 @@ input{
 
 .testimonial_profile-detail{
     font-size: var(--small-font-size);
+    display: block;
 }
 /* Swiper Class */
 .swiper-pagination-bullet{
