@@ -740,9 +740,15 @@ input{
     color: var(--title-color);
 }
 
+.testimonial_profile-data{
+    display: flex;
+    flex-direction: column;
+    row-gap: .4rem;
+}
+
 .testimonial_profile-detail{
     font-size: var(--small-font-size);
-    display: block;
+    /* display: block; */
 }
 /* Swiper Class */
 .swiper-pagination-bullet{
