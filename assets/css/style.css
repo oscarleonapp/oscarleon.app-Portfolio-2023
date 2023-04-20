@@ -856,6 +856,10 @@ input {
     color: var(--title-color);
 }
 
+::-webkit-scrollbar-thumb{
+    background-color: var(--principal-color);
+    border-radius: .5rem;
+}
 
 /*=============== SCROLL UP ===============*/
 
@@ -864,18 +868,45 @@ input {
 
 
 /*=============== SCROLL BAR ===============*/
-
+::-webkit-scrollbar{
+    width: .60rem;
+    background-color: var(--scroll-bar-color);
+    border: .5rem;
+}
 
 /*========== BREAKPOINTS ==========*/
 
 
 /* For Large Devices */
 
-@media screen and (max-width: 1408px) {}
+@media screen and (max-width: 1408px) {
+    .container{
+        margin-left: var(--mb-2-5);
+        margin-right: var(--mb-2-5);
+    }
+}
 
-@media screen and (max-width: 1216px) {}
+@media screen and (max-width: 1216px) {
+    .about_container{
+        column-gap: 2.5rem;
+    }
 
-@media screen and (max-width: 1024px) {}
+    .about_description{
+        padding-right: 0;
+    }
+
+    .work_container{
+        grid-template-columns: repeat(2, 330px);
+        /* gap: 2rem; */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        margin-left: var(--mb-1-5);
+        margin-right: var(--mb-1-5);
+    }
+}
 
 
 /* For Medium Devices */
