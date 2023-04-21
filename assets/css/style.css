@@ -688,17 +688,17 @@ input {
 }
 
 .services_modal-content {
-    width: 500px;
+    /* width: 1fr; */
     position: relative;
     background-color: var(--box-color);
-    padding: 4.5rem 2.5rem 2.5rem;
+    padding: 2.5rem 2.5rem 2.5rem;
     border-radius: .5rem;
 }
 
 .services_modal-close {
     position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
+    top: 1rem;
+    right: 1rem;
     font-size: 1.5rem;
     color: var(--principal-color);
     cursor: pointer;
