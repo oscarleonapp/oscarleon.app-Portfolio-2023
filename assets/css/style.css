@@ -253,8 +253,7 @@ input {
     color: var(--principal-color);
 }
 
-.nav_link.active-link::after,
-.nav_link:hover::after {
+.nav_link.active-link::after{
     position: absolute;
     content: '';
     width: 6px;
