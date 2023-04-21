@@ -768,7 +768,16 @@ input {
 
 .testimonial_quote {
     display: inline-flex;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    color: var(--principal-color);
+    margin-bottom: var(--mb-1);
+}
+
+.testimonial_quote-right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    font-size: 1rem;
     color: var(--principal-color);
     margin-bottom: var(--mb-1);
 }
@@ -779,8 +788,11 @@ input {
 }
 
 .testimonial_date {
-    font-size: var(--normal-font-size);
+    font-size: var(--smaller-font-size);
     margin-bottom: var(--mb-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .testimonial_profile {
