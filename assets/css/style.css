@@ -66,6 +66,15 @@
     box-sizing: border-box;
 }
 
+.text-white{
+    color: var(--title-color);
+}
+
+.text-principal{
+    color: var(--principal-color);
+}
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -607,11 +616,12 @@ input {
 .details_description {
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-2);
+    text-align: justify;
 }
 
 .details_info li {
     margin-bottom: var(--mb-0-75);
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-size: var(--small-font-size);
 }
 
