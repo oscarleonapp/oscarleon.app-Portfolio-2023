@@ -72,7 +72,7 @@
 
 
 html {
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
     font-family: 'IBM Plex Sans';
 }
 
