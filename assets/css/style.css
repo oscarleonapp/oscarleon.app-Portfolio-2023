@@ -240,6 +240,7 @@ input {
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .nav_close {
@@ -535,6 +536,7 @@ input {
     cursor: pointer;
     color: var(--title-color);
     padding: .25rem .75rem;
+    margin-left: -1rem;
     font-weight: var(--font-medium);
     border-radius: .5rem;
 }
@@ -676,7 +678,7 @@ input {
 /*===== Services Section =====*/
 
 .services_container {
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(3, 220px);
     justify-content: center;
     column-gap: 1.8rem;
 }
@@ -684,7 +686,7 @@ input {
 .services_content {
     position: relative;
     background-color: var(--box-color);
-    padding: 2.5rem 0 2rem 2.5rem;
+    padding: 2rem 0 2rem 2rem;
     border-radius: .25rem;
 }
 
@@ -805,6 +807,7 @@ input {
         width: 750px;
         margin-left: auto !important;
         margin-right: auto !important;
+
     }
 }
 
@@ -1182,6 +1185,7 @@ input {
         right: initial;
         left: 1.5rem;
         cursor: pointer;
+        z-index: 1;
     }
 
     .home {

@@ -1,18 +1,18 @@
 /*=============== SHOW SIDEBAR ===============*/
 const navMenu = document.getElementById('sidebar'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close')
 
 /*===== SIDEBAR SHOW =====*/
 /* Validate If Constant Exists */
-if(navToggle){
+if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-sidebar')
     })
 }
 /*===== SIDEBAR HIDDEN =====*/
 /* Validate If Constant Exists */
-if(navClose){
+if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-sidebar')
     })
@@ -35,23 +35,23 @@ let mixerPortolio = mixitup('.work_container', {
 /*===== Link Active Work =====*/
 const linkWork = document.querySelectorAll('.work_item')
 
-function activeWork(){
-    linkWork.forEach(l=> l.classList.remove('active_work'))
+function activeWork() {
+    linkWork.forEach(l => l.classList.remove('active_work'))
     this.classList.add('active_work')
 }
 
-linkWork.forEach(l=> l.addEventListener("click", activeWork))
+linkWork.forEach(l => l.addEventListener("click", activeWork))
 
 /*===== Work Popup =====*/
 document.addEventListener("click", (e) => {
-    if(e.target.classList.contains("work_img")){
+    if (e.target.classList.contains("work_img")) {
         togglePortfolioPopup()
         portfolioItemDetails(e.target.parentElement);
     }
 })
 
 document.addEventListener("click", (e) => {
-    if(e.target.classList.contains("work_button")){
+    if (e.target.classList.contains("work_button")) {
         togglePortfolioPopup()
         portfolioItemDetails(e.target.parentElement);
     }
@@ -63,7 +63,7 @@ function togglePortfolioPopup() {
 
 document.querySelector(".close-modal").addEventListener("click", togglePortfolioPopup)
 
-function portfolioItemDetails(portfolioItem){
+function portfolioItemDetails(portfolioItem) {
     document.querySelector(".pp_thumbnail img").src = portfolioItem.querySelector(".work_img").src;
     // Se puede cambiar el img class, para cargar otro recurso
     document.querySelector(".portfolio_popup-subtitle span").innerHTML = portfolioItem.querySelector(".work_tittle").innerHTML;
@@ -71,10 +71,10 @@ function portfolioItemDetails(portfolioItem){
 }
 /*=============== SERVICES MODAL ===============*/
 const modalViews = document.querySelectorAll('.services_modal'),
-      modalBtns = document.querySelectorAll('.services_button'),
-      modalCloses = document.querySelectorAll('.services_modal-close')
+    modalBtns = document.querySelectorAll('.services_button'),
+    modalCloses = document.querySelectorAll('.services_modal-close')
 
-let modal = function(modalClick){
+let modal = function (modalClick) {
     modalViews[modalClick].classList.add('active-modal')
 }
 
@@ -108,7 +108,7 @@ let swiper = new Swiper(".testimonials_container", {
         },
         768: {
             slidesPerView: 2,
-            spaceBetween: 48,
+            // spaceBetween: 48,
 
         },
 
@@ -125,21 +125,19 @@ const sections = document.querySelectorAll("section[id]");
 //add an event listener listening for scroll
 window.addEventListener("scroll", navHighlihter);
 
-function navHighlihter(){
+function navHighlihter() {
     // get current scroll position
     let scrollY = window.pageYOffset;
     //Now we loop trough sections to get height, top and ID values for each
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 50,
-        sectionId = current.getAttribute("id");
+            sectionId = current.getAttribute("id");
         // If our
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight)
-        {
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add("active-link")
         }
-        else
-        {
+        else {
             document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove("active-link")
         }
     })
