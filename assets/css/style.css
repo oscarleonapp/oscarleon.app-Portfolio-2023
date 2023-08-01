@@ -888,6 +888,13 @@ input {
     background-color: var(--principal-color);
 }
 
+/* IFRAME */
+.livedemo {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+
+}
 
 /*=============== FOOTER ===============*/
 
