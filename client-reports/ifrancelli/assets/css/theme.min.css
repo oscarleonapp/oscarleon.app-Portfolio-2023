@@ -15568,7 +15568,7 @@ a.badge {
   --si-list-group-active-color: #fff;
   --si-list-group-active-bg: #fff;
   --si-list-group-active-border-color: #fff;
-  --si-list-group-active-box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(255, 255, 241, 0.9);
+  /* --si-list-group-active-box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(255, 255, 241, 0.9); */
   display: flex;
   flex-direction: column;
   padding-left: 0;
