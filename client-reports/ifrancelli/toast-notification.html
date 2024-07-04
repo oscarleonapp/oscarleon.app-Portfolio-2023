@@ -120,10 +120,10 @@
               <!-- Mes 02 -->
               <h3 class="fs-lg"><i class="bi bi-calendar-event"></i>&nbsp; Mes 02 <span style="font-size: 12px;">(29 feb - 29 mar)</span></h3>
               <div class="list-group list-group-flush mx-n4 pb-2 border-bottom " >
-                <a href="toast-notification.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Toast Notificaciones</a>
+                <a href="toast-notification.html" class="list-group-item list-group-item-action border-0 py-2 px-4 active">Toast Notificaciones</a>
                 <a href="mod-user-m2.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Módulo Usuario</a>
                 <a href="interfaz-sistema.html" class="list-group-item list-group-item-action border-0 py-2 px-4">UX / UI</a>
-                <a href="mod-login-m2.html" class="list-group-item list-group-item-action border-0 py-2 px-4 active">Módulo Inicio de Sesión</a>
+                <a href="mod-login-m2.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Módulo Inicio de Sesión</a>
               </div>
               <!-- End Mes 02 -->
               <!-- Mes 01-->
@@ -157,7 +157,7 @@
         <!-- Page title -->
         <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 pt-4 mb-n3">
           <div class="me-4">
-            <h1 class="pb-1">Módulo Login</h1>
+            <h1 class="pb-1">Módulo Usuario</h1>
             <!-- <p class="text-muted fs-lg mb-2">La semana del 05 de febrero 2024, se da inicio al primer módulo del sistema, el cual consiste en la creación del Login (inicio de sesión) tanto la parte del Front-End (visual) como la parte del BackEnd (manipulación de datos)</p> -->
           </div>
           <!-- <span class="badge bg-warning mb-2">Silicon component</span> -->
@@ -169,7 +169,7 @@
               <article class="card" style="max-width: 58rem;">
                 <div class="card-body">
                   <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Validaciones C#</h3></a>
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Lista de usuarios</h3></a>
                     <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
                       <i class="bx bx-bookmark"></i>
                     </a> -->
@@ -177,8 +177,82 @@
                   <h3 class="h4">
                     <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
                   </h3>
-                  <ul><li>Se trabajó en las validaciones al ingresar datos en los formularios. Estas validaciones fueron realizadas en C# y se encargan de que los datos ingresados sean correctos.</li>
-                    <li>Si al ingresar el DPI de usuario se ingresa una letra este marcara un error ya que no es posible ese tipo de dato, al igual que solo tiene permitido ingresar dígitos.</li>
+                  <P>Listado de usuarios con CRUD, versión anterior.</P>
+                  <img src="assets/img/mod-login/list-user.png" alt="" class="mb-4">
+                  <p>Se realizo una mejora para mostrar el listado de usuarios</p>
+                  <img src="assets/img/mod-login/list-user-new.png" alt="" class="mb-4">
+                  <p class="mb-4">La nueva versión implementa mejoras para mostrar la información, la tabla está mejor organizada y diseñada (UI).</p>
+                  <p>(UX) Los usuarios ahora tienen opciones para poder filtrar información de la tabla sin tener que buscar haciendo scroll con el mouse. Las opciones para editar se colocaron en un solo botón dejando espacio para mostrar más info.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white text-decoration-none"><h3>LOG Histórico</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <p class="mb-4">Se implementó un historial de acciones realizadas en el sistema. El cual permitirá al personal a cargo del sistema tener una visualizaciones de las acciones de sus usuario/empleados.</p>
+                  <p class="mb-4">Dicha implementación permite poder ver por fecha, hora y usuario, cada acción realizada. Si en dado caso se modifica el nombre, dirección, salario, vacaciones, u otro dato, este siempre será visible desde esta apartado.</p>
+                  <p>versión 1</p>
+                  <img src="assets/img/mod-login/log-v1.jpg" alt="" class="mb-4">
+                  <p>versión 2</p>
+                  <img src="assets/img/mod-login/log-v2.png" alt="">
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white text-decoration-none"><h3>Funcionamiento API Usuario</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <img src="assets/img/mod-login/edit-datos.png" alt="" class="mb-4">
+                  <p class="mb-4">Datos técnicos del funcionamiento</p>
+                  <p><strong>Edición de Datos de Perfil:</strong></p>
+                  <ul>
+                    <li>Endpoint: /profile</li>
+                    <li>Método: PUT</li>
+                    <li>Autenticación: Token de sesión requerido en el header de la petición.</li>
+                    <li>Datos de entrada: Los datos del perfil que se desean actualizar.</li>
+                    <li>Proceso:
+                      <ul>
+                        <li>Validar el token de sesión.</li>
+                        <li>Verificar que el correo electrónico no esté en uso si se desea cambiar.</li>
+                        <li>Actualizar los datos del perfil del usuario en la base de datos.</li>
+                        <li>Devolver una confirmación de éxito al cliente.</li>
+                      </ul>
+                    </li>
+                    <li>Respuesta:
+                      <ul>
+                        <li>Éxito: Un mensaje de confirmación de que el perfil ha sido actualizado.</li>
+                        <li>Error: Un mensaje de error si el token es inválido, el correo ya está en uso, o hay un problema con la actualización de la base de datos.</li>
+                      </ul>
+                    </li>
                   </ul>
                 </div>
               </article>
@@ -186,47 +260,6 @@
           </div>
         </section>
         <!-- INSTALACIÓN SQL -->
-        <!-- ADQUISICIÓN SERVER -->
-        <section id="server" class=" py-5 ps-lg-2 ps-xxl-0">
-          <div class="tab-content pt-1">
-            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
-              <article class="card" style="max-width: 58rem;">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Implementación de Token</h3></a>
-                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
-                      <i class="bx bx-bookmark"></i>
-                    </a> -->
-                  </div>
-                  <h3 class="h4">
-                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
-                  </h3>
-                  <p>Se realiza la implementación de Token para reforzar la seguridad del sistema. Este token solo funciona durante 5 minutos y luego desaparece por inactividad, teniendo como reacción el deslogueo del usuario en el sistema.</p>
-                  <p><strong>Autenticación de Usuario (Login)</strong></p>
-                  <ul>
-                    <li><strong>Endpoint:</strong> /login</li>
-                    <li><strong>Método:</strong> POST</li>
-                    <li><strong>Datos de entrada:</strong> Credenciales del usuario (correo electrónico y contraseña).</li>
-                    <li><strong>Proceso:</strong>
-                      <ul>
-                        <li>Validar las credenciales contra la base de datos.</li>
-                        <li>Si las credenciales son correctas, generar un token de sesión (JWT).</li>
-                        <li>Devolver el token de sesión al cliente.</li>
-                      </ul>
-                    </li>
-                    <li><strong>Respuesta:</strong>
-                      <ul>
-                        <li>Éxito: Un JSON con el token de sesión y un mensaje de éxito.</li>
-                        <li>Error: Un mensaje de error apropiado (credenciales incorrectas, cuenta no encontrada, etc.)</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- ADQUISICICIÓN SERVER -->
 
       </div>
     </main>

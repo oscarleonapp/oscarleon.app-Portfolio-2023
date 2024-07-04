@@ -120,6 +120,7 @@
               <!-- Mes 02 -->
               <h3 class="fs-lg"><i class="bi bi-calendar-event"></i>&nbsp; Mes 02 <span style="font-size: 12px;">(29 feb - 29 mar)</span></h3>
               <div class="list-group list-group-flush mx-n4 pb-2 border-bottom " >
+                <a href="toast-notification.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Toast Notificaciones</a>
                 <a href="mod-user-m2.html" class="list-group-item list-group-item-action border-0 py-2 px-4 active">Módulo Usuario</a>
                 <a href="interfaz-sistema.html" class="list-group-item list-group-item-action border-0 py-2 px-4">UX / UI</a>
                 <a href="mod-login-m2.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Módulo Inicio de Sesión</a>
@@ -168,7 +169,7 @@
               <article class="card" style="max-width: 58rem;">
                 <div class="card-body">
                   <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Registro de usuarios en la Base de Datos</h3></a>
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Lista de usuarios</h3></a>
                     <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
                       <i class="bx bx-bookmark"></i>
                     </a> -->
@@ -176,7 +177,12 @@
                   <h3 class="h4">
                     <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
                   </h3>
-                  <img src="assets/img/mod-login/registro-bd-user.png" alt="">
+                  <P>Listado de usuarios con CRUD, versión anterior.</P>
+                  <img src="assets/img/mod-login/list-user.png" alt="" class="mb-4">
+                  <p>Se realizo una mejora para mostrar el listado de usuarios</p>
+                  <img src="assets/img/mod-login/list-user-new.png" alt="" class="mb-4">
+                  <p class="mb-4">La nueva versión implementa mejoras para mostrar la información, la tabla está mejor organizada y diseñada (UI).</p>
+                  <p>(UX) Los usuarios ahora tienen opciones para poder filtrar información de la tabla sin tener que buscar haciendo scroll con el mouse. Las opciones para editar se colocaron en un solo botón dejando espacio para mostrar más info.</p>
                 </div>
               </article>
             </div>
@@ -190,7 +196,7 @@
               <article class="card" style="max-width: 58rem;">
                 <div class="card-body">
                   <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white text-decoration-none"><h3>Mostrando datos de usuarios desde la BD</h3></a>
+                    <a href="#" class="badge fs-sm text-white text-decoration-none"><h3>LOG Histórico</h3></a>
                     <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
                       <i class="bx bx-bookmark"></i>
                     </a> -->
@@ -198,17 +204,12 @@
                   <h3 class="h4">
                     <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
                   </h3>
-                  <img src="assets/img/mod-login/edit-datos.png" alt="" class="mb-4">
-                  <p class="mb-4">Tareas realizadas</p>
-                  <p><strong>Configurar un Servicio de Cliente HTTP:</strong>
-                    Se utilizó el servicio HttpClient para realizar solicitudes HTTP a un endpoint que proporciona los datos de la base de datos. Este servicio permite enviar solicitudes GET, POST, PUT, DELETE, etc.</p>
-                  <p><strong>Crear un Endpoint en el Servidor:</strong>
-                    Endpoint en el servidor que maneje la solicitud para obtener los datos de usuario desde la base de datos. Este endpoint es una API RESTful para devolver los datos requeridos.</p>
-                  <p>Utilizando el servicio HttpClient, se envia una solicitud HTTP al endpoint creado en el servidor. La solicitud GET para obtener los datos de usuario.</p>
-                  <p><strong>Procesar la Respuesta:</strong>
-                    Una vez que se recibe la respuesta del servidor, se procesa en el sistema. Se deserializa la respuesta JSON en un objeto C# que se utiliza en la aplicación.</p>
-                  <p><strong>Mostrar los Datos al Usuario:</strong>
-                    Finalmente,se muestran los datos del usuario en la interfaz de usuario.</p>
+                  <p class="mb-4">Se implementó un historial de acciones realizadas en el sistema. El cual permitirá al personal a cargo del sistema tener una visualizaciones de las acciones de sus usuario/empleados.</p>
+                  <p class="mb-4">Dicha implementación permite poder ver por fecha, hora y usuario, cada acción realizada. Si en dado caso se modifica el nombre, dirección, salario, vacaciones, u otro dato, este siempre será visible desde esta apartado.</p>
+                  <p>versión 1</p>
+                  <img src="assets/img/mod-login/log-v1.jpg" alt="" class="mb-4">
+                  <p>versión 2</p>
+                  <img src="assets/img/mod-login/log-v2.png" alt="">
                 </div>
               </article>
             </div>
