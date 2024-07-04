@@ -120,7 +120,7 @@
               <!-- Mes 02 -->
               <h3 class="fs-lg"><i class="bi bi-calendar-event"></i>&nbsp; Mes 02 <span style="font-size: 12px;">(29 feb - 29 mar)</span></h3>
               <div class="list-group list-group-flush mx-n4 pb-2 border-bottom " >
-                <a href="mod-user-m2.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Módulo Usuario</a>
+                <a href="mod-user-m2.html" class="list-group-item list-group-item-action border-0 py-2 px-4 active">Módulo Usuario</a>
                 <a href="interfaz-sistema.html" class="list-group-item list-group-item-action border-0 py-2 px-4">UX / UI</a>
                 <a href="mod-login-m2.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Módulo Inicio de Sesión</a>
               </div>
@@ -130,7 +130,7 @@
               <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
                 <a href="mod-user.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Módulo Usuario</a>
                 <a href="mod-login.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Módulo Inicio de Sesión</a>
-                <a href="index.html" class="list-group-item list-group-item-action border-0 py-2 px-4 active active">Configuración Inicial</a>
+                <a href="index.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Configuración Inicial</a>
 
               </div>
               <!-- End Mes 01 -->
@@ -156,8 +156,8 @@
         <!-- Page title -->
         <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 pt-4 mb-n3">
           <div class="me-4">
-            <h1 class="pb-1">Configuración inicial</h1>
-            <!-- <p class="text-muted fs-lg mb-2">Estos servicios son necesarios para el funcionamiento del sistema</p> -->
+            <h1 class="pb-1">Módulo Usuario</h1>
+            <!-- <p class="text-muted fs-lg mb-2">La semana del 05 de febrero 2024, se da inicio al primer módulo del sistema, el cual consiste en la creación del Login (inicio de sesión) tanto la parte del Front-End (visual) como la parte del BackEnd (manipulación de datos)</p> -->
           </div>
           <!-- <span class="badge bg-warning mb-2">Silicon component</span> -->
         </div>
@@ -168,7 +168,7 @@
               <article class="card" style="max-width: 58rem;">
                 <div class="card-body">
                   <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white text-decoration-none"><h3>Instalación de la Instancia SQL Server</h3></a>
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Registro de usuarios en la Base de Datos</h3></a>
                     <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
                       <i class="bx bx-bookmark"></i>
                     </a> -->
@@ -176,13 +176,82 @@
                   <h3 class="h4">
                     <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
                   </h3>
-                  <p class="mb-4">
-                    Una instancia de SQL Server es una instalación del motor de base de datos SQL Server. Cada instancia administra varias bases de datos del sistema y una o varias bases de datos de usuario.
-                  </p>
-                  <p class="mb-4">
-                    Otras tareas realizadas
-                  </p>
-                  <ul><li>Configuración SQL Server Base de Datos</li>
+                  <img src="assets/img/mod-login/registro-bd-user.png" alt="">
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white text-decoration-none"><h3>Mostrando datos de usuarios desde la BD</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <img src="assets/img/mod-login/edit-datos.png" alt="" class="mb-4">
+                  <p class="mb-4">Tareas realizadas</p>
+                  <p><strong>Configurar un Servicio de Cliente HTTP:</strong>
+                    Se utilizó el servicio HttpClient para realizar solicitudes HTTP a un endpoint que proporciona los datos de la base de datos. Este servicio permite enviar solicitudes GET, POST, PUT, DELETE, etc.</p>
+                  <p><strong>Crear un Endpoint en el Servidor:</strong>
+                    Endpoint en el servidor que maneje la solicitud para obtener los datos de usuario desde la base de datos. Este endpoint es una API RESTful para devolver los datos requeridos.</p>
+                  <p>Utilizando el servicio HttpClient, se envia una solicitud HTTP al endpoint creado en el servidor. La solicitud GET para obtener los datos de usuario.</p>
+                  <p><strong>Procesar la Respuesta:</strong>
+                    Una vez que se recibe la respuesta del servidor, se procesa en el sistema. Se deserializa la respuesta JSON en un objeto C# que se utiliza en la aplicación.</p>
+                  <p><strong>Mostrar los Datos al Usuario:</strong>
+                    Finalmente,se muestran los datos del usuario en la interfaz de usuario.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white text-decoration-none"><h3>Funcionamiento API Usuario</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <img src="assets/img/mod-login/edit-datos.png" alt="" class="mb-4">
+                  <p class="mb-4">Datos técnicos del funcionamiento</p>
+                  <p><strong>Edición de Datos de Perfil:</strong></p>
+                  <ul>
+                    <li>Endpoint: /profile</li>
+                    <li>Método: PUT</li>
+                    <li>Autenticación: Token de sesión requerido en el header de la petición.</li>
+                    <li>Datos de entrada: Los datos del perfil que se desean actualizar.</li>
+                    <li>Proceso:
+                      <ul>
+                        <li>Validar el token de sesión.</li>
+                        <li>Verificar que el correo electrónico no esté en uso si se desea cambiar.</li>
+                        <li>Actualizar los datos del perfil del usuario en la base de datos.</li>
+                        <li>Devolver una confirmación de éxito al cliente.</li>
+                      </ul>
+                    </li>
+                    <li>Respuesta:
+                      <ul>
+                        <li>Éxito: Un mensaje de confirmación de que el perfil ha sido actualizado.</li>
+                        <li>Error: Un mensaje de error si el token es inválido, el correo ya está en uso, o hay un problema con la actualización de la base de datos.</li>
+                      </ul>
+                    </li>
                   </ul>
                 </div>
               </article>
@@ -190,209 +259,6 @@
           </div>
         </section>
         <!-- INSTALACIÓN SQL -->
-        <!-- ADQUISICIÓN SERVER -->
-        <section id="server" class=" py-5 ps-lg-2 ps-xxl-0">
-          <div class="tab-content pt-1">
-            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
-              <article class="card" style="max-width: 58rem;">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white text-decoration-none"><h3>Adquisición del Server</h3></a>
-                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
-                      <i class="bx bx-bookmark"></i>
-                    </a> -->
-                  </div>
-                  <h3 class="h4">
-                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
-                  </h3>
-                  <p class="mb-4">
-                    Este servicio es de cuota mensual
-                  </p>
-                  <p class="mb-4">
-                    Un servidor web es un ordenador de gran potencia que se encarga de “prestar el servicio” de transmitir la información pedida por sus clientes (otros ordenadores, dispositivos móviles, impresoras, personas, etc.).
-                  </p>
-                  <ul>
-                    <li>Sistema Operativo
-                      <ul><li>Windows Server 2022 Standard Edition (64 bit)</li></ul>
-                    </li>
-                    <li>Localización
-                      <ul><li>WAS2 (Washington D.C Metropolitan Area, VA, USA)</li></ul>
-                    </li>
-                  </ul>
-                  <p class="mb-4">
-                    Luego de adquirir el servidor se realización las siguientes tareas:
-                    <ul>
-                      <li>Configuración del Server</li>
-                      <li>Configuración de la VPN en el Server</li>
-                      <li>Instalación del IIS
-                        <ul><li>Un IIS, o Servicios de Información de Internet, es un software que actúa como un servidor web.</li></ul>
-                      </li>
-                      <li>Configuración del IIS</li>
-                    </ul>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- ADQUISICICIÓN SERVER -->
-        <!-- CORREO SUPPORT -->
-        <section id="email-support" class=" py-5 ps-lg-2 ps-xxl-0">
-          <div class="tab-content pt-1">
-            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
-              <article class="card" style="max-width: 58rem;">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white text-decoration-none"><h3>Creación del correo it-support@</h3></a>
-                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
-                      <i class="bx bx-bookmark"></i>
-                    </a> -->
-                  </div>
-                  <h3 class="h4">
-                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
-                  </h3>
-                  <p class="mb-4">
-                    Para la administración del server se creó un correo de soporte con el dominio de ifrancelli.com
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- CORREO SUPPORT -->
-        <!-- HOSTING -->
-        <section id="hosting" class=" py-5 ps-lg-2 ps-xxl-0">
-          <div class="tab-content pt-1">
-            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
-              <article class="card" style="max-width: 58rem;">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white text-decoration-none"><h3>Adquisición de Hosting Premium</h3></a>
-                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
-                      <i class="bx bx-bookmark"></i>
-                    </a> -->
-                  </div>
-                  <h3 class="h4">
-                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
-                  </h3>
-                  <p class="mb-4">
-                    Este servicio se contrató para el periodo 2024 - 2026.
-                  </p>
-                  <p class="mb-4">
-                    Permite el alojamiento de backups y recursos para el sistema, además de almacenamiento para los correos electrónicos.
-                    </p>
-                  <p class="mb-4">
-                    El servicio premium permite la creación ilimitada de correos institucionales, toda vez no se alcance el almacenamiento máximo del mismo (50GB).
-                    </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- HOSTING -->
-        <!-- CERTIFICADO SSL -->
-        <section id="ssl" class=" py-5 ps-lg-2 ps-xxl-0">
-          <div class="tab-content pt-1">
-            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
-              <article class="card" style="max-width: 58rem;">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white text-decoration-none"><h3>Adquisición de Certificado SSL</h3></a>
-                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
-                      <i class="bx bx-bookmark"></i>
-                    </a> -->
-                  </div>
-                  <h3 class="h4">
-                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
-                  </h3>
-                  <p class="mb-4">
-                    Este servicio se contrató para el periodo 2024 - 2026.
-                  </p>
-                  <p class="mb-4">
-                    Un certificado SSL es un pequeño archivo de datos que vincula digitalmente una clave criptográfica con los datos de una organización. Una vez instalado en el servidor web, el certificado activa el candado y el protocolo https, habilitando una conexión segura desde el servidor web hasta el navegador.
-                    </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- CERTIFICADO SSL -->
-        <!-- DNS -->
-        <section id="dns" class=" py-5 ps-lg-2 ps-xxl-0">
-          <div class="tab-content pt-1">
-            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
-              <article class="card" style="max-width: 58rem;">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white text-decoration-none"><h3>Adquisición de DNS Premium</h3></a>
-                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
-                      <i class="bx bx-bookmark"></i>
-                    </a> -->
-                  </div>
-                  <h3 class="h4">
-                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
-                  </h3>
-                  <p class="mb-4">
-                    Este servicio se contrató para el periodo 2024 - 2026.
-                  </p>
-                  <p class="mb-4">
-                    El DNS Premium garantiza un mayor tiempo de actividad del servicio y la mejor calidad y experiencia posibles. En comparación con un servicio DNS más básico, Premium DNS garantiza un rendimiento más rápido, máxima disponibilidad del sitio y mejor seguridad.
-                    </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- DNS -->
-        <!-- DOMINIO -->
-        <section id="dominio" class=" py-5 ps-lg-2 ps-xxl-0">
-          <div class="tab-content pt-1">
-            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
-              <article class="card" style="max-width: 58rem;">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white text-decoration-none"><h3>Adquisición del dominio</h3></a>
-                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
-                      <i class="bx bx-bookmark"></i>
-                    </a> -->
-                  </div>
-                  <h3 class="h4">
-                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
-                  </h3>
-                  <p class="mb-4">
-                    Se realizó la adquisición del dominio ifrancelli.com por 1 año, este debe ser renovado el 11 de abril de cada año.
-                    </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- DOMINIO -->
-        
-        <!-- List view -->
-        <!-- <section id="portfolio-list" class="py-5 ps-lg-2 ps-xxl-0">
-          <h2 class="h4">List view</h2>
-          <div class="tab-content pt-1">
-            <div class="tab-pane fade show active" id="preview3" role="tabpanel">
-              <div class="row pb-lg-3">
-                <div class="col-md-6 pb-1 mb-3 pb-md-0 mb-md-0">
-                  <a href="#">
-                    <img src="assets/img/portfolio/list/01.jpg" class="rounded-3" width="600" alt="Image">
-                  </a>
-                </div>
-                <div class="col-md-6">
-                  <div class="ps-md-4 ms-md-2">
-                    <div class="fs-sm text-muted mb-1">Nov 18, 2023</div>
-                    <h2 class="h3">SaaS Project Management Tool</h2>
-                    <a href="#" class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Graphic Design</a>
-                    <p class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">Malesuada eu cursus natoque purus ipsum nunc, velit cras tellus. Maecenas viverra pellentesque at ultrices purus vitae quis erat volutpat. Turpis auctor neque bibendum id pellentesque ut egestas. Donec ut faucibus nisl nec at purus. Cursus vel gravida gravida purus varius feugiat.Semper mauris id adipiscing est. Nam leo rutrum gravida curabitur at vel risus.</p>
-                    <a href="#" class="btn btn-outline-primary">View more</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> -->
 
       </div>
     </main>
