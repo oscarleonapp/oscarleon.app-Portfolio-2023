@@ -120,10 +120,10 @@
               <!-- Mes 03-->
               <h3 class="fs-lg"><i class="bi bi-calendar-event"></i>&nbsp; Mes 03 <span style="font-size: 12px;">(29 mar - 29 abr)</span></h3>
               <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
-                <a href="mod-user.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Módulo empleado</a>
-                <a href="mod-user.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Módulo vacaciones</a>
-                <a href="mod-user.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Módulo planilla</a>
-                <a href="mod-user.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Módulo recuperación de contraseña</a>
+                <a href="create-employee-m3.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Módulo empleado</a>
+                <a href="modulo-vacaciones.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Módulo vacaciones</a>
+                <a href="modulo-planilla.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Módulo planilla</a>
+                <a href="recuperar-contraseña.html" class="list-group-item list-group-item-action border-0 py-2 px-4 active">Módulo recuperación de contraseña</a>
               </div>
               <!-- End Mes 03 -->
               <!-- Mes 02 -->
@@ -143,7 +143,7 @@
               <!-- Mes 01-->
               <h3 class="fs-lg"><i class="bi bi-calendar-event"></i>&nbsp; Mes 01 <span style="font-size: 12px;">(29 ene - 29 feb)</span></h3>
               <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
-                <a href="mod-user.html" class="list-group-item list-group-item-action border-0 py-2 px-4 active">Módulo Usuario</a>
+                <a href="mod-user.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Módulo Usuario</a>
                 <a href="mod-login.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Módulo Inicio de Sesión</a>
                 <a href="index.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Configuración Inicial</a>
 
@@ -171,7 +171,7 @@
         <!-- Page title -->
         <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 pt-4 mb-n3">
           <div class="me-4">
-            <h1 class="pb-1">Módulo Usuario</h1>
+            <h1 class="pb-1">Módulo recuperación de contraseña</h1>
             <!-- <p class="text-muted fs-lg mb-2">La semana del 05 de febrero 2024, se da inicio al primer módulo del sistema, el cual consiste en la creación del Login (inicio de sesión) tanto la parte del Front-End (visual) como la parte del BackEnd (manipulación de datos)</p> -->
           </div>
           <!-- <span class="badge bg-warning mb-2">Silicon component</span> -->
@@ -183,7 +183,7 @@
               <article class="card" style="max-width: 58rem;">
                 <div class="card-body">
                   <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Registro de usuarios en la Base de Datos</h3></a>
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Modal recuperar contraseña</h3></a>
                     <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
                       <i class="bx bx-bookmark"></i>
                     </a> -->
@@ -191,82 +191,151 @@
                   <h3 class="h4">
                     <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
                   </h3>
-                  <img src="assets/img/mod-login/registro-bd-user.png" alt="">
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- INSTALACIÓN SQL -->
-        <!-- INSTALACIÓN SQL -->
-        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
-          <div class="tab-content pt-1">
-            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
-              <article class="card" style="max-width: 58rem;">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white text-decoration-none"><h3>Mostrando datos de usuarios desde la BD</h3></a>
-                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
-                      <i class="bx bx-bookmark"></i>
-                    </a> -->
-                  </div>
-                  <h3 class="h4">
-                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
-                  </h3>
-                  <img src="assets/img/mod-login/edit-datos.png" alt="" class="mb-4">
-                  <p class="mb-4">Tareas realizadas</p>
-                  <p><strong>Configurar un Servicio de Cliente HTTP:</strong>
-                    Se utilizó el servicio HttpClient para realizar solicitudes HTTP a un endpoint que proporciona los datos de la base de datos. Este servicio permite enviar solicitudes GET, POST, PUT, DELETE, etc.</p>
-                  <p><strong>Crear un Endpoint en el Servidor:</strong>
-                    Endpoint en el servidor que maneje la solicitud para obtener los datos de usuario desde la base de datos. Este endpoint es una API RESTful para devolver los datos requeridos.</p>
-                  <p>Utilizando el servicio HttpClient, se envia una solicitud HTTP al endpoint creado en el servidor. La solicitud GET para obtener los datos de usuario.</p>
-                  <p><strong>Procesar la Respuesta:</strong>
-                    Una vez que se recibe la respuesta del servidor, se procesa en el sistema. Se deserializa la respuesta JSON en un objeto C# que se utiliza en la aplicación.</p>
-                  <p><strong>Mostrar los Datos al Usuario:</strong>
-                    Finalmente,se muestran los datos del usuario en la interfaz de usuario.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- INSTALACIÓN SQL -->
-        <!-- INSTALACIÓN SQL -->
-        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
-          <div class="tab-content pt-1">
-            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
-              <article class="card" style="max-width: 58rem;">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white text-decoration-none"><h3>Funcionamiento API Usuario</h3></a>
-                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
-                      <i class="bx bx-bookmark"></i>
-                    </a> -->
-                  </div>
-                  <h3 class="h4">
-                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
-                  </h3>
-                  <img src="assets/img/mod-login/edit-datos.png" alt="" class="mb-4">
-                  <p class="mb-4">Datos técnicos del funcionamiento</p>
-                  <p><strong>Edición de Datos de Perfil:</strong></p>
+                  <img src="assets/img/mod-login/recuperar-contrasena.jpg" alt="" class="mb-4">
                   <ul>
-                    <li>Endpoint: /profile</li>
-                    <li>Método: PUT</li>
-                    <li>Autenticación: Token de sesión requerido en el header de la petición.</li>
-                    <li>Datos de entrada: Los datos del perfil que se desean actualizar.</li>
-                    <li>Proceso:
-                      <ul>
-                        <li>Validar el token de sesión.</li>
-                        <li>Verificar que el correo electrónico no esté en uso si se desea cambiar.</li>
-                        <li>Actualizar los datos del perfil del usuario en la base de datos.</li>
-                        <li>Devolver una confirmación de éxito al cliente.</li>
-                      </ul>
-                    </li>
-                    <li>Respuesta:
-                      <ul>
-                        <li>Éxito: Un mensaje de confirmación de que el perfil ha sido actualizado.</li>
-                        <li>Error: Un mensaje de error si el token es inválido, el correo ya está en uso, o hay un problema con la actualización de la base de datos.</li>
-                      </ul>
-                    </li>
+                    <li>Se creó la lógica de recuperación de contraseña utilizando una API REST.</li>
+                    <li>Se creó la parte visual de la pantalla para poder realizar la recuperación de contraseña.</li>
+                    <li>Se está trabajando en la lógica para enviar correos electrónicos de recuperación de contraseña desde el servidor SMTP de Industrias Francelli.</li>
+                    <li>Se creó la página y componentes necesarios de la aplicación para manejar el proceso de recuperación de contraseña. Esto incluye una página para solicitar el restablecimiento de contraseña, una página para confirmar la solicitud y una página para ingresar la nueva contraseña.</li>
+                    <li>Implementación de la lógica necesaria para generar tokens de restablecimiento de contraseña, enviar correos electrónicos con enlaces de restablecimiento y verificar y cambiar contraseñas.</li>
+                    <li>Manejo adecuado de los errores que puedan surgir durante el proceso de recuperación de contraseña, como direcciones de correo electrónico no válidas y errores de envío de correo electrónico.</li>
+                    <li>Se han realizado pruebas exhaustivas para asegurar que el proceso de recuperación de contraseña funcione como se espera en diferentes escenarios y condiciones.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Página de inicio</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <img src="assets/img/mod-login/recuper-contra-home.jpg" alt="" class="mb-4">
+                  <p>Se incluye en la pantalla de bienvida al sistema la opción de poder recuperar contraseña.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Modal Home Recuperar</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <img src="assets/img/mod-login/modal-correo.jpg" alt="" class="mb-4">
+                  <p>Tareas a realizadas.</p>
+                  <ul>
+                    <li><strong>Crear el componente modal:</strong> Creación del componente modal que contendrá el formulario de recuperación de contraseña.</li>
+                    <li><strong>Diseñar el formulario:</strong> Formulario de recuperación de contraseña con los campos necesarios, como el campo de correo electrónico.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Validación de correo</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <img src="assets/img/mod-login/modal-validar-email.jpg" alt="" class="mb-4">
+                  <img src="assets/img/mod-login/moda-sin-correo.jpg" alt="" class="mb-4">
+                  <p>Tareas a realizadas.</p>
+                  <ul>
+                   <li><strong>Agregar validación de datos:</strong> Validación de datos por .NET para validar el campo de correo electrónico en el formulario.</li>
+                   <li><strong>Manejar la lógica del formulario:</strong> Se define un método de manejo de envío del formulario (HandleSubmit) que se ejecutará cuando el usuario envíe el formulario. En este método, se implementa la lógica necesaria para procesar la solicitud de recuperación de contraseña, como enviar un correo electrónico al usuario con un enlace de recuperación.</li>
+                   <li><strong>Mostrar mensajes de validación:</strong> Se muestra un mensaje de error cuando el usuario ingresa un correo electrónico inválido o no ingrese ningún correo electrónico. Se manejará la validación automáticamente y se mostrará los mensajes de error como se puede apreciar en la imagen.</li>
+                   <li><strong>Abrir y cerrar el modal:</strong> Funcionalidad para abrir y cerrar el modal según sea necesario. El modal se abre cuando se hace clic en un botón recuperar contraseña y se cierra después de enviar el formulario de recuperación de contraseña con éxito.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Nueva contraseña</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <img src="assets/img/mod-login/modal-new-password.jpg" alt="" class="mb-4">
+                  <p>Tareas a realizadas.</p>
+                  <ul>
+                   <li><strong>Validar la nueva contraseña:</strong> Se utiliza .NET para validar el campo de la nueva contraseña en el formulario.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Validar repetición de contraseña</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <img src="assets/img/mod-login/new-password.jpg" alt="" class="mb-4">
+                  <img src="assets/img/mod-login/password-igual.jpg" alt="" class="mb-4">
+                  <p>Tareas a realizadas.</p>
+                  <ul>
+                   <li><strong>Validar la repetición de la contraseña:</strong> Además de validar la nueva contraseña, también se necesita validar que la contraseña ingresada en el campo de repetir contraseña coincida exactamente con la nueva contraseña.</li>
+                   <li><strong>Manejar la lógica del formulario:</strong> Se define un método de manejo de envío del formulario que se ejecutará cuando el usuario envíe el formulario. En este método, además de enviar la solicitud de recuperación de contraseña, también se valida que la nueva contraseña y la repetición de la contraseña sean iguales. Si no coinciden, se muestra un mensaje de error apropiado al usuario.</li>
+                   <li><strong>Mostrar mensajes de validación:</strong> El formulario muestra mensajes de error adecuados cuando la nueva contraseña y la repetición de la contraseña no coincidan.</li>
+                   <li><strong>Actualizar la contraseña:</strong> Una vez que se haya validado la nueva contraseña y la repetición de la contraseña y ambas coincidan, se actualiza la contraseña del usuario en el sistema. Se hace una llamada a un método que actualiza la contraseña en la base de datos de autenticación.</li>
                   </ul>
                 </div>
               </article>

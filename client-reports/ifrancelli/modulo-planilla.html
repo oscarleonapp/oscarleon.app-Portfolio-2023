@@ -120,16 +120,16 @@
               <!-- Mes 03-->
               <h3 class="fs-lg"><i class="bi bi-calendar-event"></i>&nbsp; Mes 03 <span style="font-size: 12px;">(29 mar - 29 abr)</span></h3>
               <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
-                <a href="mod-user.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Módulo empleado</a>
-                <a href="mod-user.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Módulo vacaciones</a>
-                <a href="mod-user.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Módulo planilla</a>
-                <a href="mod-user.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Módulo recuperación de contraseña</a>
+                <a href="create-employee-m3.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Módulo empleado</a>
+                <a href="modulo-vacaciones.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Módulo vacaciones</a>
+                <a href="modulo-planilla.html" class="list-group-item list-group-item-action border-0 py-2 px-4 active">Módulo planilla</a>
+                <a href="recuperar-contraseña.html" class="list-group-item list-group-item-action border-0 py-2 px-4 ">Módulo recuperación de contraseña</a>
               </div>
               <!-- End Mes 03 -->
               <!-- Mes 02 -->
               <h3 class="fs-lg"><i class="bi bi-calendar-event"></i>&nbsp; Mes 02 <span style="font-size: 12px;">(29 feb - 29 mar)</span></h3>
               <div class="list-group list-group-flush mx-n4 pb-2 border-bottom " >
-                <a href="create-employee.html" class="list-group-item list-group-item-action border-0 py-2 px-4 active">Módulo Crear Empleado</a>
+                <a href="create-employee.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Módulo Crear Empleado</a>
                 <a href="create-user.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Módulo Crear Usuario</a>
                 <a href="mod-perfil.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Módulo Perfil</a>
                 <a href="side-bar.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Side Bar</a>
@@ -171,7 +171,7 @@
         <!-- Page title -->
         <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 pt-4 mb-n3">
           <div class="me-4">
-            <h1 class="pb-1">Creación de empleados</h1>
+            <h1 class="pb-1">Módulo Planilla</h1>
             <!-- <p class="text-muted fs-lg mb-2">La semana del 05 de febrero 2024, se da inicio al primer módulo del sistema, el cual consiste en la creación del Login (inicio de sesión) tanto la parte del Front-End (visual) como la parte del BackEnd (manipulación de datos)</p> -->
           </div>
           <!-- <span class="badge bg-warning mb-2">Silicon component</span> -->
@@ -183,7 +183,7 @@
               <article class="card" style="max-width: 58rem;">
                 <div class="card-body">
                   <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Crear empleado</h3></a>
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Estructura</h3></a>
                     <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
                       <i class="bx bx-bookmark"></i>
                     </a> -->
@@ -191,8 +191,229 @@
                   <h3 class="h4">
                     <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
                   </h3>
-                  <P>Acá deberá crear los usuarios que si gestionarán el sistema y automáticamente se les crearán sus credenciales para ingresar al sistema.</P>
-                  <img src="assets/img/mod-login/crear-empleado.png" alt="" class="mb-4">
+                  <img src="assets/img/mod-login/back-end-structure.jpg" alt="" class="mb-4">
+                  <p class="mb-4">Se estructuró la base de datos para poder realizar las siguientes gestiones de planilla.</p>
+                  <ul>
+                    <li>Obtener el ID del empleado</li>
+                    <li>Fecha de pago</li>
+                    <li>Monto del pago</li>
+                    <li>Descripción del pago</li>
+                  </ul>
+                  <p class="mb-4">Opciones</p>
+                  <ul class="mb-4">
+                    <li>Modificar fecha</li>
+                    <li>Borrar registro</li>
+                  </ul>
+                  <p class="mb-4">El siguiente paso es mostrar la información estructurada en la base de datos de forma visual para el usuario, se está trabajando en la pantalla que mostrará la información.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Generar pago</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <img src="assets/img/mod-login/planilla.png" alt="" class="mb-4">
+                  <p class="mb-4">Descripción de los elementos del módulo.</p>
+                  <ul>
+                    <li>Generar pago:
+                      Esta es una versión temprana "Beta" del Sub-módulo para generar los pagos. En esta versión se puede selececionar un empleado de los que se encuentran registrados en el sistema.</li>
+                  </ul>
+                  <img src="assets/img/mod-login/empleado-pago.png" alt="" class="mb-4">
+                  <p>Se puede seleccionar una fecha del calendario para asignarlo al pago que estará por realizar.</p>
+                  <img src="assets/img/mod-login/calendar-pago.png" alt="" class="mb-4">
+                  <p>Puede seleccionar desde un listado preliminar una opción de pago.</p>
+                  <img src="assets/img/mod-login/type-pay.png" alt="" class="mb-4">
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Gestión de pago</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <img src="assets/img/mod-login/result-pago.png" alt="" class="mb-4">
+                  <p class="mb-4">En la sescción "Da inicio el módulo Planilla" se explicaron los elementos interactivos que componen el menu para realizar un pago.</p>
+                  <p>Acá se muestra como ese módulo funciona</p>
+                  <ul>
+                    <li>El empleado a seleccionar para realizar el pago, debe estar previamente registrado en el sistema como empleado y no solo como un usuario.</li>
+                    <li>Seguidamente debera seleccionar la fecha correspondiente al pago que desea generar y seleccionar el tipo de pago "quincena, mes, etc"</li>
+                    <li>Ingresa un monto de pago y presiona el botón agregar, esto generará un registro del pago.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Listado de pagos</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <img src="assets/img/mod-login/list-pagos.png" alt="" class="mb-4">
+                  <p class="mb-4">Acá se mostrará el listado de pagos efectuados en el panel de "Generar pago". Tendrá a la vista el listado de los pagos y podra realizar filtros para encontrar el pago por fecha, empleado, monto o bien la descripción.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Generar nomina</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <img src="assets/img/mod-login/gen-nomina.jpg" alt="" class="mb-4">
+                  <p class="mb-4"><strong>Funcionamiento:</strong> Muestra el listado completo de empleados para poder generar la nomina y al seleccionar el empleado deseado se pueden editar los detalles.</p>
+                  <p>Una vez editado el detalle, presiona en guardar y se enviará un correo a cada empleado con el detalle de su pago.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Configuración nomina</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <img src="assets/img/mod-login/conf-nomina.jpg" alt="" class="mb-4">
+                  <p class="mb-4"><strong>Explicación:</strong> Al crear un nuevo empleado en el sistema, podrá agregar en la configuración inicial el salario del nuevo empleado su bonificación y si aplica al ISR.</p>
+                  <p>Esta configuración ayudara al momento de generar la Nomina.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Actualización de nomina</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <p>En esta actualización se agrega la opción de realizar los pagos de forma quincenal o mensual.</p>
+                  <img src="assets/img/mod-login/mant-pago.jpg" alt="" class="mb-4">
+                  <p class="mb-4">Al dar clic en generar la nomina, se mostrarán los empleados que pertenezcan a la frecuencia de pago seleccionada, si son de Quincena o de Mes.</p>
+                  <img src="assets/img/mod-login/frec-empleados.jpg" alt="" class="mb-4">
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Frecuencia de pago</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <p>Se agrego en el módulo de Mantimiento de Usuario, la opción de "Frecuencia de Pago" para controlar la nomina.</p>
+                  <img src="assets/img/mod-login/mant-pago.jpg" alt="" class="mb-4">
+                  <p class="mb-4">La misma opción se agregaron a los modulos de Creación y Actualización de Usuario "Frecuencia de Pago" para controlar la nomina.</p>
+                  <img src="assets/img/mod-login/creacion-actualizacion.jpg" alt="" class="mb-4">
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Selección de pagos</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <p>Acá en esta sección puede realizar pagos individuales y también encontrará la función de Frecuencia de Pago para seleccionar.</p>
+                  <img src="assets/img/mod-login/pago-indi.jpg" alt="" class="mb-4">
+                  <p class="mb-4">Cuando selecciona la frecuencia de pago "Quincenal" o "Mensual", se mostrarán unicamente los empleados que esten configurados en esa forma de pago.</p>
+                  <img src="assets/img/mod-login/solo-emple.jpg" alt="" class="mb-4">
+                  <p>Tanto en generar Nomina como en Pagos individuales, el IGSS se generara automáticamente.</p>
+                  <img src="assets/img/mod-login/IGSS.jpg" alt="" class="mb-4">
                 </div>
               </article>
             </div>
