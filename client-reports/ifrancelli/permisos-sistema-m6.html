@@ -202,7 +202,7 @@
               <article class="card" style="max-width: 58rem;">
                 <div class="card-body">
                   <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Toast notificación</h3></a>
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Árbol de permisos</h3></a>
                     <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
                       <i class="bx bx-bookmark"></i>
                     </a> -->
@@ -210,8 +210,28 @@
                   <h3 class="h4">
                     <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
                   </h3>
-                  <img src="assets/img/mod-login/mensaje-eval.png" alt="" class="mb-4">
-                  <p>Si el mes elegido para realizar la evaluación ya ha sido realizado con anterioridad el sistema le mostrará un mensaje de error.</p>
+                  <img src="assets/img/mod-login/arbol-permisos.jpg" alt="" class="mb-4">
+                  <p>Un árbol de permisos es una estructura jerárquica utilizada para gestionar y organizar los permisos de acceso en un sistema. Esta estructura permite definir y visualizar cómo se asignan los permisos a diferentes niveles y elementos del sistema, facilitando la administración de accesos de una manera ordenada y estructurada.</p>
+                  <p><strong>Características de un Árbol de Permisos</strong></p>
+                  <ol>
+                    <li><strong>Nodos y Ramas:</strong>
+                      <ul>
+                        <li class="mb-4"><strong>Nodos:</strong> Cada nodo en el árbol representa un recurso o una entidad del sistema, como un archivo, una carpeta, una aplicación, o un módulo.</li>
+                        <li class="mb-4"><strong>Ramas:</strong> Las ramas conectan los nodos y representan las relaciones jerárquicas entre ellos. Un nodo padre puede tener varios nodos hijos.</li>
+                      </ul>
+                    </li>
+                    <li><strong>Herencia de Permisos:</strong>
+                     <ul>
+                      <li class="mb-4">Los permisos pueden heredarse desde un nodo padre a sus nodos hijos. Esto significa que si un nodo tiene ciertos permisos, estos pueden aplicarse automáticamente a todos sus descendientes, a menos que se especifique lo contrario.</li>
+                      <li class="mb-4">La herencia facilita la asignación de permisos a grandes grupos de recursos sin necesidad de configurar cada uno individualmente.</li>
+                     </ul>
+                    </li>
+                    <li><strong>Flexibilidad y Especificidad:</strong>
+                      <ul>
+                       <li class="mb-4">Aunque la herencia de permisos simplifica la administración, también es posible definir permisos específicos en nodos individuales para manejar casos especiales.</li>
+                      </ul>
+                     </li>
+                  </ol>
                 </div>
               </article>
             </div>
@@ -225,7 +245,7 @@
               <article class="card" style="max-width: 58rem;">
                 <div class="card-body">
                   <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Generar metrícas</h3></a>
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Asignación de Permisos en el Árbol</h3></a>
                     <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
                       <i class="bx bx-bookmark"></i>
                     </a> -->
@@ -233,8 +253,30 @@
                   <h3 class="h4">
                     <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
                   </h3>
-                  <img src="assets/img/mod-login/buscar-eval.png" alt="" class="mb-4">
-                  <p>Podrá seleccionar una rango de fechas para generar las métricas de un empleado en específico.</p>
+                  <ul>
+                    <li><strong>Nodo Raíz (Documentos):</strong>
+                      <ul>
+                        <li class="mb-4">Permisos de lectura y escritura para administradores.</li>
+                        <li class="mb-4">Permisos de lectura para todos los usuarios.</li>
+                      </ul>
+                    </li>
+                    <li><strong>Subnodos (Proyectos, Informes, Presentaciones):</strong>
+                     <ul>
+                      <li class="mb-4">Heredan los permisos del nodo raíz pero pueden tener permisos adicionales específicos.</li>
+                     </ul>
+                    </li>
+                    <li><strong>Nodos Hijos (Proyecto A, Proyecto B):</strong>
+                      <ul>
+                       <li class="mb-4">Permisos de edición para los miembros del equipo de cada proyecto específico.</li>
+                       <li class="mb-4">Permisos de lectura para usuarios generales.</li>
+                      </ul>
+                     </li>
+                     <li><strong>Nodos Hojas (Documentos de Diseño, Documentos de Implementación, Anuales, Mensuales):</strong>
+                      <ul>
+                       <li class="mb-4">Pueden tener permisos específicos, como acceso restringido a ciertos documentos sensibles.</li>
+                      </ul>
+                     </li>
+                  </ul>
                 </div>
               </article>
             </div>
@@ -248,7 +290,7 @@
               <article class="card" style="max-width: 58rem;">
                 <div class="card-body">
                   <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Actualización gráficas</h3></a>
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Beneficios del Árbol de Permisos</h3></a>
                     <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
                       <i class="bx bx-bookmark"></i>
                     </a> -->
@@ -256,16 +298,74 @@
                   <h3 class="h4">
                     <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
                   </h3>
-                  <img src="assets/img/mod-login/graf-eval.png" alt="" class="mb-4">
-                  <p>Con el rago de fechas seleccionado se genera la gráfica</p>
-                  <p>La gráfica puede cambiar a ondas o barras.</p>
+                  <ul>
+                    <li><strong>Organización:</strong>
+                      <ul>
+                        <li class="mb-4"> Facilita la organización y visualización de la estructura de permisos en un sistema complejo.</li>
+                      </ul>
+                    </li>
+                    <li><strong>Eficiencia:</strong>
+                     <ul>
+                      <li class="mb-4">Permite asignar permisos a grupos grandes de recursos de manera eficiente mediante la herencia.</li>
+                     </ul>
+                    </li>
+                    <li><strong>Flexibilidad:</strong>
+                      <ul>
+                       <li class="mb-4">Ofrece la capacidad de sobrescribir permisos heredados en nodos específicos cuando sea necesario.</li>
+                      </ul>
+                     </li>
+                     <li><strong>Seguridad:</strong>
+                      <ul>
+                       <li class="mb-4">Ayuda a mantener una gestión más controlada y segura de los permisos, reduciendo el riesgo de accesos no autorizados.</li>
+                      </ul>
+                     </li>
+                  </ul>
                 </div>
               </article>
             </div>
           </div>
         </section>
         <!-- INSTALACIÓN SQL -->
-
+        <!-- INSTALACIÓN SQL -->
+        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <article class="card" style="max-width: 58rem;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Implementación y Uso</h3></a>
+                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+                      <i class="bx bx-bookmark"></i>
+                    </a> -->
+                  </div>
+                  <h3 class="h4">
+                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
+                  </h3>
+                  <p>La implementación de un árbol de permisos varía según el sistema y la plataforma utilizada, pero generalmente involucra:</p>
+                  <ul>
+                    <li><strong>Definición de la estructura jerárquica:</strong>
+                      <ul>
+                        <li class="mb-4">Identificar y organizar los recursos del sistema en una estructura de árbol.</li>
+                      </ul>
+                    </li>
+                    <li><strong>Asignación de permisos:</strong>
+                     <ul>
+                      <li class="mb-4">Configurar los permisos en los diferentes niveles del árbol, aprovechando la herencia donde sea posible.</li>
+                     </ul>
+                    </li>
+                    <li><strong>Gestión continua:</strong>
+                      <ul>
+                       <li class="mb-4">Revisar y ajustar los permisos según las necesidades cambiantes y el crecimiento del sistema.</li>
+                      </ul>
+                     </li>
+                  </ul>
+                  <p>El uso de un árbol de permisos es común en sistemas de gestión de contenidos, sistemas operativos, plataformas de software empresarial, y cualquier otro entorno donde la administración de accesos sea crítica.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- INSTALACIÓN SQL -->
 
       </div>
     </main>

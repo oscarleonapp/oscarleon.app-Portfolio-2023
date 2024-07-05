@@ -202,7 +202,7 @@
               <article class="card" style="max-width: 58rem;">
                 <div class="card-body">
                   <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Toast notificación</h3></a>
+                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Explicación</h3></a>
                     <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
                       <i class="bx bx-bookmark"></i>
                     </a> -->
@@ -210,55 +210,53 @@
                   <h3 class="h4">
                     <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
                   </h3>
-                  <img src="assets/img/mod-login/mensaje-eval.png" alt="" class="mb-4">
-                  <p>Si el mes elegido para realizar la evaluación ya ha sido realizado con anterioridad el sistema le mostrará un mensaje de error.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- INSTALACIÓN SQL -->
-        <!-- INSTALACIÓN SQL -->
-        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
-          <div class="tab-content pt-1">
-            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
-              <article class="card" style="max-width: 58rem;">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Generar metrícas</h3></a>
-                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
-                      <i class="bx bx-bookmark"></i>
-                    </a> -->
-                  </div>
-                  <h3 class="h4">
-                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
-                  </h3>
-                  <img src="assets/img/mod-login/buscar-eval.png" alt="" class="mb-4">
-                  <p>Podrá seleccionar una rango de fechas para generar las métricas de un empleado en específico.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- INSTALACIÓN SQL -->
-        <!-- INSTALACIÓN SQL -->
-        <section id="sql-instant" class=" py-5 ps-lg-2 ps-xxl-0">
-          <div class="tab-content pt-1">
-            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
-              <article class="card" style="max-width: 58rem;">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between mb-3">
-                    <a href="#" class="badge fs-sm text-white  text-decoration-none"><h3>Actualización gráficas</h3></a>
-                    <!-- <a href="#" class="btn btn-icon btn-secondary btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
-                      <i class="bx bx-bookmark"></i>
-                    </a> -->
-                  </div>
-                  <h3 class="h4">
-                    <!-- <a href="#">This Week in Search: New Limits and Exciting Features</a> -->
-                  </h3>
-                  <img src="assets/img/mod-login/graf-eval.png" alt="" class="mb-4">
-                  <p>Con el rago de fechas seleccionado se genera la gráfica</p>
-                  <p>La gráfica puede cambiar a ondas o barras.</p>
+                  <p>
+                    Los permisos de usuarios en un sistema determinan qué acciones pueden realizar los usuarios y a qué recursos pueden acceder. Estos permisos son esenciales para garantizar la seguridad y la organización del sistema.
+                  </p>
+                  <ol>
+                    <li><strong>Roles y Grupos</strong>
+                    <ul>
+                      <li class="mb-4"><strong>Roles:</strong> Un rol es un conjunto de permisos que se puede asignar a los usuarios. Por ejemplo, un sistema podría tener roles como "Administrador", "Editor", y "Usuario".</li>
+                      <li class="mb-4"><strong>Grupos:</strong> Los usuarios pueden ser agrupados en grupos, y los permisos pueden asignarse a estos grupos. Esto facilita la gestión de permisos, especialmente en organizaciones grandes.</li>
+                    </ul>
+                  </li>
+                  <li><strong>Tipos de Permisos</strong>
+                    <ul>
+                      <li class="mb-4"><strong>Lectura (Read):</strong> Permite ver los datos o archivos.</li>
+                      <li class="mb-4"><strong>Escritura (Write):</strong> Permite modificar o crear datos o archivos.</li>
+                      <li class="mb-4"><strong>Ejecución (Execute):</strong> Permite ejecutar archivos o programas.</li>
+                      <li class="mb-4"><strong>Eliminación (Delete):</strong> Permite borrar datos o archivos.</li>
+                      <li class="mb-4"><strong>Administración:</strong> Permite gestionar el sistema o recursos específicos.</li>
+                    </ul>
+                  </li>
+                  <li><strong>Modelos de Control de Acceso</strong>
+                    <ul>
+                      <li class="mb-4"><strong>Control de Acceso Discrecional (DAC):</strong> Los propietarios de los recursos tienen control sobre quién puede acceder a sus recursos. Es un modelo flexible, pero menos seguro.</li>
+                      <li class="mb-4"><strong>Control de Acceso Basado en Roles (RBAC):</strong> Los permisos se asignan a roles y los usuarios se asignan a esos roles. Es un modelo eficiente para gestionar permisos en organizaciones grandes.</li>
+                      <li class="mb-4"><strong>Control de Acceso Obligatorio (MAC):</strong> Los permisos son controlados por una autoridad central y no pueden ser modificados por los usuarios. Es un modelo muy seguro, utilizado en entornos donde la seguridad es crítica.</li>
+                      <li class="mb-4"><strong>Control de Acceso Basado en Atributos (ABAC):</strong> Los permisos se basan en atributos de los usuarios y los recursos, como la ubicación, la hora del día, etc. Es un modelo muy flexible y granular.</li>
+                    </ul>
+                  </li>
+                  <li><strong>Implementación de Permisos</strong>
+                    <ul>
+                      <li class="mb-4"><strong>Listas de Control de Acceso (ACLs):</strong> Son listas que especifican qué usuarios o grupos tienen qué permisos sobre un recurso. Cada entrada en la lista define un permiso para un usuario o grupo.</li>
+                      <li class="mb-4"><strong>Políticas de Seguridad:</strong> Son reglas que definen qué acciones están permitidas o denegadas. Las políticas pueden ser muy específicas y detalladas.</li>
+                      <li class="mb-4"><strong>Sistemas de Autenticación y Autorización:</strong> La autenticación verifica la identidad del usuario (p.ej., mediante contraseñas, tarjetas inteligentes, biometría), y la autorización determina si el usuario tiene permiso para realizar una acción específica.</li>
+                    </ul>
+                  </li>
+                  <li><strong>Ejemplo Práctico</strong>
+                    <p>Imagina un sistema de gestión de documentos:</p>
+                    <ul>
+                    <li class="mb-4">Un <strong>Administrador</strong> puede crear, leer, editar y eliminar cualquier documento.</li>
+                    <li class="mb-4">Un <strong>Editor</strong> puede crear, leer y editar documentos, pero no puede eliminar.</li>
+                    <li class="mb-4">Un <strong>Usuario</strong> solo puede leer los documentos.</li>
+                    </ul>
+                  <p>Cuando un usuario intenta realizar una acción, el sistema verifica sus permisos basándose en su rol o grupo y decide si la acción está permitida.</p>
+                  </li>
+                  <li><strong>Auditoría y Monitoreo</strong><br>
+                    Los sistemas suelen incluir funciones de auditoría y monitoreo para registrar y supervisar el acceso a los recursos. Esto es crucial para detectar y responder a accesos no autorizados o actividades sospechosas.
+                  </li>
+                  </ol>
                 </div>
               </article>
             </div>
